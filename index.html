@@ -1,10 +1,64 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="utf-8">
         <title>Alessandro Motta</title>
+        <style>
+            body {
+                margin: 0;
+                padding: 20px;
+                display: flex;
+                justify-content: center;
+                font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+            }
+
+            .container {
+                width: 48em;
+            }
+
+            .content {
+                display: flex;
+                flex-direction: row;
+                align-items: flex-start;
+                gap: 1.25em;
+            }
+
+            .image-container {
+                width: 25%;
+                max-width: 12em;
+            }
+
+            img {
+                max-width: 100%;
+                height: auto;
+                display: block;
+            }
+
+            .text-container {
+                width: 75%;
+                line-height: 1.5;
+            }
+
+            .text-container > h1 {
+                margin: 0;
+                line-height: 1;
+            }
+        </style>
     </head>
     <body>
-        <h1>Hello world!</h1>
+        <div class="container">
+            <div class="content">
+                <div class="image-container">
+                    <img src="assets/portrait.jpg" alt="Portrait">
+                </div>
+                <div class="text-container">
+                    <h1>Hej! I am <nobr>Alessandro Motta.</nobr></h1>
+                    <p>I am a Support Scientist in the <a href="https://www.fmi.ch/research-groups/groupleader.html?group=119#research">Group for Neuronal Circuits and Computations</a> (led by Rainer Friedrich) at the Friedrich Miescher Institute for Biomedical Research.</p>
+                    <p>Before that, I was a PhD student in the <a href="https://brain.mpg.de/helmstaedter">Department of Connectomics</a> (led by Moritz Helmstaedter) at the Max Planck Institute for Brain Research.</p>
+                    <p>For a publication overview, see <a href="https://scholar.google.com/citations?user=C_Xh-2wAAAAJ">Google Scholar</a>.</p>
+                    <p>I like <a href="https://itra.run/api/RunnerSpace/GetRunnerSpace?memberString=YoUQZ%2FCJCcowDByceS7%2Fmw%3D%3D">trail running</a>, cycling, reading, and <a href="https://www.wefunkradio.com/">music</a>.</p>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
